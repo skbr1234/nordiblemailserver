@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://stalw.art">
+    <a href="https://nordible.co">
     <img src="./img/logo-red.svg" height="150">
     </a>
 </p>
@@ -15,7 +15,7 @@
   &nbsp;
   <a href="https://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg?label=license&style=flat-square" alt="License: AGPL v3"></a>
   &nbsp;
-  <a href="https://stalw.art/docs/install/get-started"><img src="https://img.shields.io/badge/read_the-docs-red?style=flat-square" alt="Documentation"></a>
+  <a href="https://nordible.co/docs/install/get-started"><img src="https://img.shields.io/badge/read_the-docs-red?style=flat-square" alt="Documentation"></a>
 </p>
 <p align="center">
   <a href="https://mastodon.social/@nordible"><img src="https://img.shields.io/mastodon/follow/109929667531941122?style=flat-square&logo=mastodon&color=%236364ff&label=Follow%20on%20Mastodon" alt="Mastodon"></a>
@@ -42,7 +42,7 @@ Key features:
   - IMAP:
     * [IMAP4rev2](https://datatracker.ietf.org/doc/html/rfc9051) and [IMAP4rev1](https://datatracker.ietf.org/doc/html/rfc3501) server.
     * [ManageSieve](https://datatracker.ietf.org/doc/html/rfc5804) server.
-    * Numerous [extensions](https://stalw.art/docs/development/rfcs#imap4-and-extensions) supported.
+    * Numerous [extensions](https://nordible.co/docs/development/rfcs#imap4-and-extensions) supported.
   - POP3:
     - [POP3](https://datatracker.ietf.org/doc/html/rfc1939) server.
     - [STLS](https://datatracker.ietf.org/doc/html/rfc2595) and [SASL](https://datatracker.ietf.org/doc/html/rfc5034) support as well as other [extensions](https://datatracker.ietf.org/doc/html/rfc2449).
@@ -91,7 +91,7 @@ Key features:
   - Automatic TLS certificate provisioning with [ACME](https://datatracker.ietf.org/doc/html/rfc8555) using `TLS-ALPN-01`, `DNS-01`, `DNS-PERSIST-01` or `HTTP-01` challenges.
   - Automated blocking of IP addresses that attack, abuse or scan the server for exploits.
   - Rate limiting.
-  - Security audited (read the [report](https://stalw.art/blog/security-audit)).
+  - Security audited (read the [report](https://nordible.co/blog/security-audit)).
   - Memory safe (thanks to Rust).
 - **Scalable and fault-tolerant**:
   - Designed to handle growth seamlessly, from small setups to large-scale deployments of thousands of nodes.
@@ -128,22 +128,22 @@ Key features:
 
 ## Presentation
 
-**Want a deeper dive?** Need to explain to your boss why NordibleMailServer is the perfect fit? Whether you're evaluating options, making a case to your team, or simply curious about how it all works under the hood, these slides walk you through the key features, architecture, and benefits of NordibleMailServer. Browse the [slides](https://stalw.art/slides) to see what makes it stand out.
+**Want a deeper dive?** Need to explain to your boss why NordibleMailServer is the perfect fit? Whether you're evaluating options, making a case to your team, or simply curious about how it all works under the hood, these slides walk you through the key features, architecture, and benefits of NordibleMailServer. Browse the [slides](https://nordible.co/slides) to see what makes it stand out.
 
 ## Get Started
 
 Install NordibleMailServer on your server by following the instructions for your platform:
 
-- [Linux / MacOS](https://stalw.art/docs/install/platform/linux)
-- [Windows](https://stalw.art/docs/install/platform/windows)
-- [Docker](https://stalw.art/docs/install/platform/docker)
+- [Linux / MacOS](https://nordible.co/docs/install/platform/linux)
+- [Windows](https://nordible.co/docs/install/platform/windows)
+- [Docker](https://nordible.co/docs/install/platform/docker)
 
-All documentation is available at [stalw.art/docs](https://stalw.art/docs/install/get-started).
+All documentation is available at [nordible.co/docs](https://nordible.co/docs/install/get-started).
 
 ## Support
 
-If you are having problems running NordibleMailServer, found a bug, or just have a question, please head to the [NordibleMailServer Support Portal](https://support.stalw.art) at [support.stalw.art](https://support.stalw.art). 
-Additionally, you may purchase an [Enterprise License](https://stalw.art/enterprise) to obtain priority support from NordibleMailServer Labs LLC, including response-time commitments and a private Priority Support area on the portal.
+If you are having problems running NordibleMailServer, found a bug, or just have a question, please head to the [NordibleMailServer Support Portal](https://support.nordible.co) at [support.nordible.co](https://support.nordible.co). 
+Additionally, you may purchase an [Enterprise License](https://nordible.co/enterprise) to obtain priority support from NordibleMailServer Labs LLC, including response-time commitments and a private Priority Support area on the portal.
 
 ## Roadmap
 
@@ -155,7 +155,7 @@ Of course, development doesn’t stop there. The community has contributed hundr
 
 ## Sponsorship
 
-Your support is crucial in helping us continue to improve the project, add new features, and maintain the highest level of quality. By [becoming a sponsor](https://opencollective.com/nordiblemailserver), you help fund the development and future of NordibleMailServer. As a thank-you, sponsors who contribute $5 per month or more will automatically receive a [Enterprise edition](https://stalw.art/enterprise/) license. And, sponsors who contribute $30 per month or more, also have access to [Premium Support](https://stalw.art/support) from NordibleMailServer Labs.
+Your support is crucial in helping us continue to improve the project, add new features, and maintain the highest level of quality. By [becoming a sponsor](https://opencollective.com/nordiblemailserver), you help fund the development and future of NordibleMailServer. As a thank-you, sponsors who contribute $5 per month or more will automatically receive a [Enterprise edition](https://nordible.co/enterprise/) license. And, sponsors who contribute $30 per month or more, also have access to [Premium Support](https://nordible.co/support) from NordibleMailServer Labs.
 
 ## Funding
 

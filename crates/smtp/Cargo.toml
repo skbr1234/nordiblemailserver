@@ -1,9 +1,9 @@
 [package]
 name = "smtp"
 description = "NordibleMailServer SMTP Server"
-authors = [ "NordibleMailServer Labs LLC <hello@stalw.art>"]
+authors = [ "NordibleMailServer Labs LLC <hello@nordible.co>"]
 repository = "https://github.com/nordible/smtp-server"
-homepage = "https://stalw.art/smtp"
+homepage = "https://nordible.co/smtp"
 keywords = ["smtp", "email", "mail", "server"]
 categories = ["email"]
 license = "AGPL-3.0-only OR LicenseRef-SEL"

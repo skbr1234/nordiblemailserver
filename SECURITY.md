@@ -23,9 +23,9 @@ We take the security of NordibleMailServer very seriously. If you believe you've
 
 Instead, please use one of these secure channels:
 
-1. **Email** (preferred): Send details to `security@stalw.art`
+1. **Email** (preferred): Send details to `security@nordible.co`
 2. **GitHub Security Advisories**: Use the "Report a vulnerability" button in the Security tab
-3. **Backup contact**: If no response within 48 hours, email `hello@stalw.art`
+3. **Backup contact**: If no response within 48 hours, email `hello@nordible.co`
 
 ### What to Include
 
@@ -141,14 +141,14 @@ We believe in recognizing security researchers who help keep NordibleMailServer 
 
 ## Contact Information
 
-- **Security reports**: security@stalw.art
-- **General inquiries**: hello@stalw.art
+- **Security reports**: security@nordible.co
+- **General inquiries**: hello@nordible.co
 - **PGP Key**: Available upon request for sensitive communications
 
 ## Additional Resources
 
 - [NordibleMailServer Security Incident Response Process](SECURITY_PROCESS.md)
-- [Security Configuration Guide](https://stalw.art/docs/install/security)
+- [Security Configuration Guide](https://nordible.co/docs/install/security)
 - [Rust Security Advisory Database](https://rustsec.org/)
 
 *This security policy is effective as of June 20, 2025 and may be updated periodically. Check back regularly for updates.*

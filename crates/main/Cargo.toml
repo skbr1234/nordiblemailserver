@@ -1,9 +1,9 @@
 [package]
 name = "nordiblemailserver"
 description = "NordibleMailServer Mail and Collaboration Server"
-authors = [ "NordibleMailServer Labs LLC <hello@stalw.art>"]
+authors = [ "NordibleMailServer Labs LLC <hello@nordible.co>"]
 repository = "https://github.com/skbr1234/mailadmin.nordible.co"
-homepage = "https://stalw.art"
+homepage = "https://nordible.co"
 keywords = ["imap", "jmap", "smtp", "email", "mail", "webdav", "server"]
 categories = ["email"]
 license = "AGPL-3.0-only OR LicenseRef-SEL"

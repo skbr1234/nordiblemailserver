@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report an Issue
-    url: https://support.stalw.art
-    about: Report a potential bug at support.stalw.art. Confirmed bugs will be converted to Issues. Sign in with your GitHub account.
+    url: https://support.nordible.co
+    about: Report a potential bug at support.nordible.co. Confirmed bugs will be converted to Issues. Sign in with your GitHub account.
   - name: Questions & Support
-    url: https://support.stalw.art
-    about: Get help with configuration, troubleshooting, or general questions at support.stalw.art. Sign in with your GitHub account.
+    url: https://support.nordible.co
+    about: Get help with configuration, troubleshooting, or general questions at support.nordible.co. Sign in with your GitHub account.
   - name: Feature Requests
-    url: https://support.stalw.art
-    about: Suggest new features or improvements at support.stalw.art. Sign in with your GitHub account.
+    url: https://support.nordible.co
+    about: Suggest new features or improvements at support.nordible.co. Sign in with your GitHub account.
   - name: Join NordibleMailServer's Reddit
     url: https://www.reddit.com/r/nordible
     about: Join our subreddit for community discussions and release announcements.

@@ -706,7 +706,7 @@ If you are upgrading from v0.11.x, this version includes **breaking changes** to
 - MTA: Return Queue IDs during message acceptance (#927).
 
 ## Changed
-- LDAP: `bind.auth.enable` is now `bind.auth.method`, read the updated [LDAP documentation](https://stalw.art/docs/auth/backend/ldap) for more information.
+- LDAP: `bind.auth.enable` is now `bind.auth.method`, read the updated [LDAP documentation](https://nordible.co/docs/auth/backend/ldap) for more information.
 
 ## Fixed
 - DNS: `hickory-resolver` bug hitting 100% CPU usage when resolving DNSSEC records.
@@ -764,8 +764,8 @@ If you are upgrading from v0.11.x, this version includes **breaking changes** to
 This version includes **breaking changes** to the database layout and requires a migration. Please read the [UPGRADING.md](https://github.com/skbr1234/mailadmin.nordible.co/blob/main/UPGRADING.md) file for more information on how to upgrade from previous versions.
 
 ### Added
-- [Collaboration](https://stalw.art/docs/collaboration/overview) features including [Calendars over CalDAV](https://stalw.art/docs/http/calendar/), [Contacts over CardDAV](https://stalw.art/docs/http/contact/) and [File Storage over WebDAV](https://stalw.art/docs/http/file-storage/).
-- Peer-to-peer [cluster coordination](https://stalw.art/docs/cluster/coordination/overview) or with Apache Kafka, Redpanda, NATS or Redis.
+- [Collaboration](https://nordible.co/docs/collaboration/overview) features including [Calendars over CalDAV](https://nordible.co/docs/http/calendar/), [Contacts over CardDAV](https://nordible.co/docs/http/contact/) and [File Storage over WebDAV](https://nordible.co/docs/http/file-storage/).
+- Peer-to-peer [cluster coordination](https://nordible.co/docs/cluster/coordination/overview) or with Apache Kafka, Redpanda, NATS or Redis.
 - Incremental caching of emails, calendars, contacts and file metadata.
 - Zero-copy deserialization.
 - Train spam messages as ham when the sender is in the user's address book.  
@@ -775,7 +775,7 @@ This version includes **breaking changes** to the database layout and requires a
 - Add `description` property to OIDC ID token (#1234).
 
 ### Changed
-- Deprecated gossip protocol in favor of the new [coordinator](https://stalw.art/docs/cluster/coordination/overview) options.
+- Deprecated gossip protocol in favor of the new [coordinator](https://nordible.co/docs/cluster/coordination/overview) options.
 - Renamed Git repository from `nordible/mail-server` to `nordible/nordiblemailserver` and the Docker image from `nordible/mail-server` to `nordible/nordiblemailserver`.
 - Renamed multiple settings:
   - `server.http.*` to `http.*`.
@@ -1343,7 +1343,7 @@ This version introduces breaking changes in the configuration file. Please read 
 Please read the [UPGRADING.md](UPGRADING.md) file for more information on how to upgrade from previous versions.
 
 ### Added
-- Built-in [fail2ban](https://stalw.art/docs/server/fail2ban) and IP address/mask blocking (#164).
+- Built-in [fail2ban](https://nordible.co/docs/server/fail2ban) and IP address/mask blocking (#164).
 - CLI: Read URL and credentials from environment variables (#88).
 - mySQL driver: Add `max-allowed-packet` setting (#201).
 
@@ -1361,9 +1361,9 @@ Please read the [UPGRADING.md](UPGRADING.md) file for more information on how to
 Please read the [UPGRADING.md](UPGRADING.md) file for more information on how to upgrade from previous versions.
 
 ### Added
-- [ACME](https://stalw.art/docs/server/tls/acme) support for automatic TLS certificate generation and renewal (#160).
-- TLS certificate [hot-reloading](https://stalw.art/docs/management/database/maintenance#tls-certificate-reloading).
-- [HAProxy protocol](https://stalw.art/docs/server/proxy) support (#36).
+- [ACME](https://nordible.co/docs/server/tls/acme) support for automatic TLS certificate generation and renewal (#160).
+- TLS certificate [hot-reloading](https://nordible.co/docs/management/database/maintenance#tls-certificate-reloading).
+- [HAProxy protocol](https://nordible.co/docs/server/proxy) support (#36).
 
 ### Changed
 
@@ -1474,7 +1474,7 @@ This version introduces some breaking changes in the configuration file. Please 
 - Option to disable ANSI color codes in logs.
 
 ### Changed
-- Querying directories from a Sieve script is now done using the `query()` method from `eval`. Your scripts will need to be updated, please refer to the [new syntax](https://stalw.art/docs/smtp/filter/sieve#directory-queries).
+- Querying directories from a Sieve script is now done using the `query()` method from `eval`. Your scripts will need to be updated, please refer to the [new syntax](https://nordible.co/docs/smtp/filter/sieve#directory-queries).
 
 ### Fixed
 - IPrev lookups of IPv4 mapped to IPv6 addresses.

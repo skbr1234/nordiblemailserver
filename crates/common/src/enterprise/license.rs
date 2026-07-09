@@ -31,7 +31,7 @@ use store::write::now;
 use trc::ServerEvent;
 
 //const LICENSING_API: &str = "https://localhost:444/api/license/";
-const LICENSING_API: &str = "https://license.stalw.art/api/license/";
+const LICENSING_API: &str = "https://license.nordible.co/api/license/";
 const RENEW_THRESHOLD: u64 = 60 * 60 * 24 * 4; // 4 days
 
 pub struct LicenseValidator {
@@ -191,7 +191,7 @@ impl LicenseKey {
 
         trc::event!(
             Server(ServerEvent::Licensing),
-            Details = "Attempting to renew Enterprise license from license.stalw.art",
+            Details = "Attempting to renew Enterprise license from license.nordible.co",
         );
 
         match fetch_resource(

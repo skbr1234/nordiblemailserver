@@ -111,7 +111,7 @@ This vulnerability was discovered by [Researcher Name / Organization].
 
 ## References
 
-- NordibleMailServer Mail Server: https://stalw.art/
+- NordibleMailServer Mail Server: https://nordible.co/
 - CVE Entry: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-YYYY-NNNNN
 - GitHub Advisory: [Link to GitHub Security Advisory if applicable]
 - Release Notes: [Link to release notes with fix]
@@ -120,8 +120,8 @@ This vulnerability was discovered by [Researcher Name / Organization].
 
 For questions or concerns regarding this advisory, please contact:
 
-**Security Team:** hello@stalw.art  
-**Website:** https://stalw.art
+**Security Team:** hello@nordible.co  
+**Website:** https://nordible.co
 
 To report security vulnerabilities in NordibleMailServer, please follow our [responsible disclosure policy](https://github.com/skbr1234/mailadmin.nordible.co/security/policy).
 

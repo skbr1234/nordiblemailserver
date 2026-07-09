@@ -170,4 +170,4 @@ Security release vX.Y.Z will be published on YYYY-MM-DD with coordinated disclos
 - [ ] 
 
 ## Emergency Contacts
-- **Primary maintainer**: hello@stalw.art
+- **Primary maintainer**: hello@nordible.co
