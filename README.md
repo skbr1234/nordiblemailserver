@@ -143,7 +143,7 @@ All documentation is available at [nordible.co/docs](https://nordible.co/docs/in
 ## Support
 
 If you are having problems running NordibleMailServer, found a bug, or just have a question, please head to the [NordibleMailServer Support Portal](https://support.nordible.co) at [support.nordible.co](https://support.nordible.co). 
-Additionally, you may purchase an [Enterprise License](https://nordible.co/enterprise) to obtain priority support from NordibleMailServer Labs LLC, including response-time commitments and a private Priority Support area on the portal.
+Additionally, you may purchase an [Enterprise License](https://nordible.co/enterprise) to obtain priority support from Nordible Solutions, including response-time commitments and a private Priority Support area on the portal.
 
 ## Roadmap
 
@@ -177,4 +177,4 @@ Each file in this project contains a license notice at the top, indicating the a
 
 ## Copyright
 
-Copyright (C) 2020, NordibleMailServer Labs LLC
+Copyright (C) 2020, Nordible Solutions

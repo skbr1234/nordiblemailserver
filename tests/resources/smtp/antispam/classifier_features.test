@@ -2008,14 +2008,14 @@ enlarged prostate as well.</span></span><br />
   }
 ]
 <!-- NEXT TEST -->
-Delivered-To: hello@nordible.co
+Delivered-To: mail@nordible.co
 Received: from mail-wm1-x32d.google.com (mail-wm1-x32d.google.com [2a00:1450:4864:20::32d] (AS15169 Google LLC))
 	(using TLSv1.3 with cipher TLS13_AES_256_GCM_SHA384)
 	by mail.nordible.co (NordibleMailServer SMTP) with ESMTPS id 3BBB57D01CB793C;
 	Wed, 15 Oct 2025 18:31:22 +0000
 Return-Path: <yashbansal@spamtest.com>
 Received: by mail-wm1-x32d.google.com with SMTP id 5b1f17b1804b1-4710683a644so7830385e9.0
-        for <hello@nordible.co>; Wed, 15 Oct 2025 11:31:19 -0700 (PDT)
+        for <mail@nordible.co>; Wed, 15 Oct 2025 11:31:19 -0700 (PDT)
 Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
  Wed, 15 Oct 2025 14:31:17 -0400
 Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
@@ -2027,7 +2027,7 @@ Reply-To: yashbansal@spamtest.com
 Date: Wed, 15 Oct 2025 14:31:17 -0400
 Message-ID: <CAPXczWkiThEs7oq0WxXvpnYMbKUpBDnZeKdAf3LPFfbq3xUquA@mail.gmail.com>
 Subject: SpamTest Open-Source Sponsorships for NordibleMailServer
-To: Hello <hello@nordible.co>
+To: Hello <mail@nordible.co>
 Content-Type: multipart/alternative; boundary="000000000000d8b207064136b41e"
 
 --000000000000d8b207064136b41e
@@ -2344,7 +2344,7 @@ important;">
   }
 ]
 <!-- NEXT TEST -->
-Delivered-To: hello@nordible.co
+Delivered-To: mail@nordible.co
 Received: from Beijing--------chsi.com.cn (unknown [182.107.82.163] (AS4134 Chinanet, CN))
 	by mail.nordible.co (NordibleMailServer SMTP) with ESMTP id 3D6F265DB441EFD;
 	Thu, 27 Nov 2025 02:01:35 +0000
@@ -2356,7 +2356,7 @@ From: =?GB2312?B?zOGwzr36yf2439C9x+HLyciruOO2qDEwOjAxOjM0?=
  <hello-------北京------kefu@Beijing--------chsi.com.cn>
 Subject:
  =?GB2312?B?0afA+tGnzrvLq9akyKu5+rbAvNLL2bDssb6/xsu2yr+yqcq/ICC547jm?= AD hello
-To: hello@nordible.co
+To: mail@nordible.co
 Content-Type: multipart/mixed;
  boundary="=_NextPart_2rfkindysadvnqw3nerasdf";charset="GB2312"
 MIME-Version: 1.0

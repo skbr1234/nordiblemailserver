@@ -25,7 +25,7 @@ Instead, please use one of these secure channels:
 
 1. **Email** (preferred): Send details to `security@nordible.co`
 2. **GitHub Security Advisories**: Use the "Report a vulnerability" button in the Security tab
-3. **Backup contact**: If no response within 48 hours, email `hello@nordible.co`
+3. **Backup contact**: If no response within 48 hours, email `mail@nordible.co`
 
 ### What to Include
 
@@ -142,7 +142,7 @@ We believe in recognizing security researchers who help keep NordibleMailServer 
 ## Contact Information
 
 - **Security reports**: security@nordible.co
-- **General inquiries**: hello@nordible.co
+- **General inquiries**: mail@nordible.co
 - **PGP Key**: Available upon request for sensitive communications
 
 ## Additional Resources

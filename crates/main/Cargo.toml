@@ -1,7 +1,7 @@
 [package]
 name = "nordiblemailserver"
 description = "NordibleMailServer Mail and Collaboration Server"
-authors = [ "NordibleMailServer Labs LLC <hello@nordible.co>"]
+authors = [ "Nordible Solutions <mail@nordible.co>"]
 repository = "https://github.com/skbr1234/mailadmin.nordible.co"
 homepage = "https://nordible.co"
 keywords = ["imap", "jmap", "smtp", "email", "mail", "webdav", "server"]

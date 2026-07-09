@@ -120,7 +120,7 @@ This vulnerability was discovered by [Researcher Name / Organization].
 
 For questions or concerns regarding this advisory, please contact:
 
-**Security Team:** hello@nordible.co  
+**Security Team:** mail@nordible.co  
 **Website:** https://nordible.co
 
 To report security vulnerabilities in NordibleMailServer, please follow our [responsible disclosure policy](https://github.com/skbr1234/mailadmin.nordible.co/security/policy).

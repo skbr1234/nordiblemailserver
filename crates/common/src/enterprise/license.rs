@@ -13,7 +13,7 @@
  * Any attempt to modify, bypass, or disable the license validation mechanism
  * constitutes a severe violation of the NordibleMailServer Enterprise License Agreement.
  * Such actions may result in immediate termination of your license, legal action,
- * and substantial financial penalties. NordibleMailServer Labs LLC actively monitors for
+ * and substantial financial penalties. Nordible Solutions actively monitors for
  * unauthorized modifications and will pursue all available legal remedies against
  * violators to the fullest extent of the law, including but not limited to claims
  * for copyright infringement, breach of contract, and fraud.

@@ -88,7 +88,7 @@ pub static VERSION_PUBLIC: &str = "1.0.0";
 
 pub static USER_AGENT: &str = "NordibleMailServer/1.0.0";
 pub static DAEMON_NAME: &str = concat!("NordibleMailServer v", env!("CARGO_PKG_VERSION"),);
-pub static PROD_ID: &str = "-//NordibleMailServer Labs LLC//NordibleMailServer Server//EN";
+pub static PROD_ID: &str = "-//Nordible Solutions//NordibleMailServer Server//EN";
 
 /*
 
