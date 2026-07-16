@@ -995,9 +995,9 @@ dependencies = [
 
 [[package]]
 name = "calcard"
-version = "0.3.5"
+version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c253992730ab0e6e0994eaa50521b369789147f4dd70d077efc1e60c856da28"
+checksum = "42eafc6056cdb6b4b704726faf276017ab69548721ee3d5b97bec46be3453c70"
 dependencies = [
  "ahash",
  "chrono",
@@ -4389,7 +4389,8 @@ dependencies = [
 
 [[package]]
 name = "mail-auth"
-version = "0.11.0"
+version = "0.11.2"
+source = "git+https://github.com/stalwartlabs/mail-auth#0e93300e5c77b5e83ea5562d9a7e781278514fa2"
 dependencies = [
  "aws-lc-rs",
  "flate2",
@@ -4421,9 +4422,9 @@ dependencies = [
 
 [[package]]
 name = "mail-parser"
-version = "0.11.4"
+version = "0.11.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f2c0e7e0704500930be5b6c629f30d23fd1dde4d1800e138e04b3fa302e64d51"
+checksum = "47785d444be4d32c1709171c6219a90f667c0ad0ffe68b4b179e794f31f4f9e8"
 dependencies = [
  "encoding_rs",
  "hashify",
@@ -4857,6 +4858,37 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e216d0e8cf9d54fa66e5780f6e1d5dc96d1c1b3c25aeba3b6758548bcbbd8b9d"
 dependencies = [
  "serde",
+]
+
+[[package]]
+name = "nordiblemailserver"
+version = "0.16.12"
+dependencies = [
+ "common",
+ "coordinator",
+ "dav",
+ "directory",
+ "email",
+ "groupware",
+ "http 0.16.12",
+ "http_proto",
+ "imap",
+ "jemallocator",
+ "jmap",
+ "managesieve",
+ "migration",
+ "pop3",
+ "registry",
+ "rustls",
+ "services",
+ "smtp",
+ "smtp-proto",
+ "spam-filter",
+ "store",
+ "tokio",
+ "trc",
+ "types",
+ "utils",
 ]
 
 [[package]]
@@ -7771,37 +7803,6 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
-
-[[package]]
-name = "nordiblemailserver"
-version = "0.16.12"
-dependencies = [
- "common",
- "coordinator",
- "dav",
- "directory",
- "email",
- "groupware",
- "http 0.16.12",
- "http_proto",
- "imap",
- "jemallocator",
- "jmap",
- "managesieve",
- "migration",
- "pop3",
- "registry",
- "rustls",
- "services",
- "smtp",
- "smtp-proto",
- "spam-filter",
- "store",
- "tokio",
- "trc",
- "types",
- "utils",
-]
 
 [[package]]
 name = "static_assertions"
