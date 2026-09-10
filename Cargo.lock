@@ -1004,7 +1004,7 @@ dependencies = [
  "chrono-tz",
  "hashify",
  "jmap-tools",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "rkyv",
  "serde",
@@ -1299,7 +1299,7 @@ dependencies = [
  "libc",
  "lz4_flex 0.13.1",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -2057,7 +2057,7 @@ dependencies = [
  "futures",
  "jsonwebtoken",
  "ldap3",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -2310,7 +2310,7 @@ dependencies = [
  "directory",
  "groupware",
  "hashify",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "rand 0.8.6",
@@ -2436,6 +2436,17 @@ name = "fancy-regex"
 version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e1e1dacd0d2082dfcf1351c4bdd566bbe89a2b263235a2b50058f1e130a47277"
+dependencies = [
+ "bit-set 0.8.0",
+ "regex-automata",
+ "regex-syntax",
+]
+
+[[package]]
+name = "fancy-regex"
+version = "0.19.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "52e0387578e845beb7a1acff126228499f26cb18edf12919cc513bb863266464"
 dependencies = [
  "bit-set 0.8.0",
  "regex-automata",
@@ -3225,7 +3236,7 @@ dependencies = [
  "jmap",
  "jmap_proto",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "mime",
  "percent-encoding",
@@ -3866,7 +3877,7 @@ dependencies = [
  "jmap_proto",
  "lz4_flex 0.13.1",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "p256",
@@ -4389,7 +4400,8 @@ dependencies = [
 
 [[package]]
 name = "mail-auth"
-version = "0.11.0"
+version = "0.13.0"
+source = "git+https://github.com/stalwartlabs/mail-auth#d0984d9dd842b1dc0b685f9386c13c8d6b4d5207"
 dependencies = [
  "aws-lc-rs",
  "flate2",
@@ -4397,10 +4409,12 @@ dependencies = [
  "getrandom 0.4.3",
  "hashify",
  "hickory-resolver",
- "mail-builder",
+ "idna",
+ "mail-builder 0.5.0",
  "mail-parser",
- "quick-xml 0.41.0",
- "rand 0.8.6",
+ "memchr",
+ "quick-xml 0.42.0",
+ "rand 0.10.1",
  "rkyv",
  "rsa",
  "rustls-pki-types",
@@ -4420,13 +4434,23 @@ dependencies = [
 ]
 
 [[package]]
-name = "mail-parser"
-version = "0.11.4"
+name = "mail-builder"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f2c0e7e0704500930be5b6c629f30d23fd1dde4d1800e138e04b3fa302e64d51"
+checksum = "4c942e8a4b83f9351236c1e531ea9fa0237913d63c7fc36818430e0128a1ddf3"
+dependencies = [
+ "gethostname",
+]
+
+[[package]]
+name = "mail-parser"
+version = "0.11.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4ec00bda90c6e645a54506c630c2820cd6b1890cfd2b0a169b50f74b2b8c7c86"
 dependencies = [
  "encoding_rs",
  "hashify",
+ "memchr",
  "rkyv",
  "serde",
 ]
@@ -4857,6 +4881,37 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e216d0e8cf9d54fa66e5780f6e1d5dc96d1c1b3c25aeba3b6758548bcbbd8b9d"
 dependencies = [
  "serde",
+]
+
+[[package]]
+name = "nordiblemailserver"
+version = "0.16.12"
+dependencies = [
+ "common",
+ "coordinator",
+ "dav",
+ "directory",
+ "email",
+ "groupware",
+ "http 0.16.12",
+ "http_proto",
+ "imap",
+ "jemallocator",
+ "jmap",
+ "managesieve",
+ "migration",
+ "pop3",
+ "registry",
+ "rustls",
+ "services",
+ "smtp",
+ "smtp-proto",
+ "spam-filter",
+ "store",
+ "tokio",
+ "trc",
+ "types",
+ "utils",
 ]
 
 [[package]]
@@ -5930,9 +5985,9 @@ dependencies = [
 
 [[package]]
 name = "quick-xml"
-version = "0.41.0"
+version = "0.42.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e660451e55124f798a69a5af3f49ccfbefbd41910eefd25caf2393e1f3473ec1"
+checksum = "41b1177fdf999d2321d3fb46ff47159d9c1fb9ad66a4879f8c50a0b504615e9b"
 dependencies = [
  "memchr",
 ]
@@ -6394,9 +6449,9 @@ dependencies = [
 
 [[package]]
 name = "regex-automata"
-version = "0.4.14"
+version = "0.4.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6e1dd4122fc1595e8162618945476892eefca7b88c52820e74af6262213cae8f"
+checksum = "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -7311,7 +7366,7 @@ dependencies = [
  "groupware",
  "hkdf 0.13.0",
  "jmap_proto",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "memory-stats",
  "p256",
@@ -7466,15 +7521,15 @@ checksum = "f8fadd59c855ef2080decdef8ff161eb6661b86933c9d82e5ba29dc602a55aba"
 
 [[package]]
 name = "sieve-rs"
-version = "0.7.2"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a4f8e4b2c299c75cffe27efa4d762777d0e616c5741d21627839e80848797cca"
+checksum = "0cc5f9ebe4ba923a82f7524bee0d37a67b829d9befdd32e6840839d14ce6354e"
 dependencies = [
  "ahash",
  "arc-swap",
- "fancy-regex",
+ "fancy-regex 0.19.1",
  "hashify",
- "mail-builder",
+ "mail-builder 0.5.0",
  "mail-parser",
  "rkyv",
  "serde",
@@ -7580,7 +7635,7 @@ dependencies = [
  "hyper-util",
  "lru-cache",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -7674,7 +7729,7 @@ dependencies = [
  "idna",
  "infer 0.19.0",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "psl",
@@ -7771,37 +7826,6 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
-
-[[package]]
-name = "nordiblemailserver"
-version = "0.16.12"
-dependencies = [
- "common",
- "coordinator",
- "dav",
- "directory",
- "email",
- "groupware",
- "http 0.16.12",
- "http_proto",
- "imap",
- "jemallocator",
- "jmap",
- "managesieve",
- "migration",
- "pop3",
- "registry",
- "rustls",
- "services",
- "smtp",
- "smtp-proto",
- "spam-filter",
- "store",
- "tokio",
- "trc",
- "types",
- "utils",
-]
 
 [[package]]
 name = "static_assertions"
@@ -8088,7 +8112,7 @@ dependencies = [
  "jmap-tools",
  "jmap_proto",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "managesieve",
  "migration",
@@ -10427,7 +10451,7 @@ checksum = "f9eaee90f4a795d1eb4ba6c51e1c1721d4784d550e8efa7b2600f29c867365e0"
 dependencies = [
  "chrono",
  "derive_builder",
- "fancy-regex",
+ "fancy-regex 0.18.0",
  "itertools 0.14.0",
  "lazy_static",
  "regex",
