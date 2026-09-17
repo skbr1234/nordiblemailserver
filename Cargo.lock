@@ -1004,7 +1004,7 @@ dependencies = [
  "chrono-tz",
  "hashify",
  "jmap-tools",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "rkyv",
  "serde",
@@ -1299,7 +1299,7 @@ dependencies = [
  "libc",
  "lz4_flex 0.13.1",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -2057,7 +2057,7 @@ dependencies = [
  "futures",
  "jsonwebtoken",
  "ldap3",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -2310,7 +2310,7 @@ dependencies = [
  "directory",
  "groupware",
  "hashify",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "rand 0.8.6",
@@ -3225,7 +3225,7 @@ dependencies = [
  "jmap",
  "jmap_proto",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "mime",
  "percent-encoding",
@@ -3866,7 +3866,7 @@ dependencies = [
  "jmap_proto",
  "lz4_flex 0.13.1",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "p256",
@@ -4389,7 +4389,8 @@ dependencies = [
 
 [[package]]
 name = "mail-auth"
-version = "0.11.0"
+version = "0.13.2"
+source = "git+https://github.com/stalwartlabs/mail-auth#fc60beec99e5ec12ea8abf26603f1aad0fbafef0"
 dependencies = [
  "aws-lc-rs",
  "flate2",
@@ -4397,10 +4398,12 @@ dependencies = [
  "getrandom 0.4.3",
  "hashify",
  "hickory-resolver",
- "mail-builder",
+ "idna",
+ "mail-builder 1.0.0",
  "mail-parser",
- "quick-xml 0.41.0",
- "rand 0.8.6",
+ "memchr",
+ "quick-xml 0.42.0",
+ "rand 0.10.1",
  "rkyv",
  "rsa",
  "rustls-pki-types",
@@ -4420,13 +4423,23 @@ dependencies = [
 ]
 
 [[package]]
-name = "mail-parser"
-version = "0.11.4"
+name = "mail-builder"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f2c0e7e0704500930be5b6c629f30d23fd1dde4d1800e138e04b3fa302e64d51"
+checksum = "ccbc27cb02a58a311a404769a22f5abf63fe3173b290d80be7c534f9c7023151"
+dependencies = [
+ "gethostname",
+]
+
+[[package]]
+name = "mail-parser"
+version = "0.11.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4ec00bda90c6e645a54506c630c2820cd6b1890cfd2b0a169b50f74b2b8c7c86"
 dependencies = [
  "encoding_rs",
  "hashify",
+ "memchr",
  "rkyv",
  "serde",
 ]
@@ -4857,6 +4870,37 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e216d0e8cf9d54fa66e5780f6e1d5dc96d1c1b3c25aeba3b6758548bcbbd8b9d"
 dependencies = [
  "serde",
+]
+
+[[package]]
+name = "nordiblemailserver"
+version = "0.16.12"
+dependencies = [
+ "common",
+ "coordinator",
+ "dav",
+ "directory",
+ "email",
+ "groupware",
+ "http 0.16.12",
+ "http_proto",
+ "imap",
+ "jemallocator",
+ "jmap",
+ "managesieve",
+ "migration",
+ "pop3",
+ "registry",
+ "rustls",
+ "services",
+ "smtp",
+ "smtp-proto",
+ "spam-filter",
+ "store",
+ "tokio",
+ "trc",
+ "types",
+ "utils",
 ]
 
 [[package]]
@@ -5930,9 +5974,9 @@ dependencies = [
 
 [[package]]
 name = "quick-xml"
-version = "0.41.0"
+version = "0.42.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e660451e55124f798a69a5af3f49ccfbefbd41910eefd25caf2393e1f3473ec1"
+checksum = "41b1177fdf999d2321d3fb46ff47159d9c1fb9ad66a4879f8c50a0b504615e9b"
 dependencies = [
  "memchr",
 ]
@@ -7311,7 +7355,7 @@ dependencies = [
  "groupware",
  "hkdf 0.13.0",
  "jmap_proto",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "memory-stats",
  "p256",
@@ -7474,7 +7518,7 @@ dependencies = [
  "arc-swap",
  "fancy-regex",
  "hashify",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "rkyv",
  "serde",
@@ -7580,7 +7624,7 @@ dependencies = [
  "hyper-util",
  "lru-cache",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "md5",
  "nlp",
@@ -7674,7 +7718,7 @@ dependencies = [
  "idna",
  "infer 0.19.0",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "nlp",
  "psl",
@@ -7771,37 +7815,6 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
-
-[[package]]
-name = "nordiblemailserver"
-version = "0.16.12"
-dependencies = [
- "common",
- "coordinator",
- "dav",
- "directory",
- "email",
- "groupware",
- "http 0.16.12",
- "http_proto",
- "imap",
- "jemallocator",
- "jmap",
- "managesieve",
- "migration",
- "pop3",
- "registry",
- "rustls",
- "services",
- "smtp",
- "smtp-proto",
- "spam-filter",
- "store",
- "tokio",
- "trc",
- "types",
- "utils",
-]
 
 [[package]]
 name = "static_assertions"
@@ -8088,7 +8101,7 @@ dependencies = [
  "jmap-tools",
  "jmap_proto",
  "mail-auth",
- "mail-builder",
+ "mail-builder 0.4.4",
  "mail-parser",
  "managesieve",
  "migration",
